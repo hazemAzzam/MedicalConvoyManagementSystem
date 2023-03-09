@@ -10,7 +10,7 @@ import 'values_manager.dart';
 ThemeData getApplicationTheme(BuildContext context) {
   return ThemeData(
     // main colors
-    scaffoldBackgroundColor: ColorManager.white,
+    scaffoldBackgroundColor: ColorManager.grey,
 
     primaryColor: ColorManager.primary,
 

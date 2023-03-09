@@ -5,10 +5,8 @@ class HomeScreenDesktop extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Text("Desktop", style: Theme.of(context).textTheme.titleMedium),
-      ),
+    return const Scaffold(
+      body: SizedBox(),
     );
   }
 }

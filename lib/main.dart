@@ -7,7 +7,7 @@ import 'presentation/screens/desktop/home.dart';
 import 'presentation/screens/mobile/home.dart';
 import 'presentation/screens/tablet/home.dart';
 
-void main() {
+void main() async {
   runApp(const App());
 }
 
