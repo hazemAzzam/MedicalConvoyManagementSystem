@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Montserrat+Alternates&family=Montserrat:ital,wght@0,500;0,600;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Montserrat:ital,wght@0,500;0,600;1,500&family=Raleway:wght@600&display=swap');
+
+/* All */ 
+
+a {
+  text-decoration: none !important;
+  color: #fff;
+}
+
+a:hover {
+  color: #fff !important;
+}
+
+img {
+  width: 100%;
+}
+
+ul>li {
+  list-style-type: none;
+}
+
+section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.btn {
+  background-color: #008F3A;
+  border: 0px;
+  border-radius: 30px;
+  padding: 12px 30px 12px 30px;
+  transition: all 0.4s ease;
+  font-weight: 500;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #00A244;
+  border: none;
+}
+
+/*---------------------
+          Navbar
+  ---------------------*/
+.top-nav {
+  background-color: #008F3A;
+}
+
+.top-nav .item i {
+  color: #fff;
+}
+
+.top-nav span {
+  margin-left: 6px;
+  color: #fff;
+}
+
+.social-nav a {
+  color: #fff !important;
+  margin-right: 20px;
+  font-size: 1.1rem;
+}
+
+.navbar-light .navbar-brand{
+  color: #008F3A;
+}
+.navbar-light .navbar-brand:hover {
+  color: #008F3A !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  padding: 25px 17px 25px 17px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 0.4s ease;
+  margin-right: 6px;
+  color: #000;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  background-color: #008F3A;
+  color: #fff !important;
+}
+
+.aria-current {
+  background-color: #008F3A;
+  color: #fff !important;
+}
+
+/*---------------
+        Hero
+  ---------------*/
+ 
+.hero {
+ background-image: url('https://bootstrapmade.com/demo/templates/Medilab/assets/img/hero-bg.jpg');
+  height: calc(100vh - 110px);
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  position: relative;
+}
+
+.hero h2 {
+  font-family: "Raleway", sans-serif;
+  color: #008F3A !important;
+  font-weight: bold;
+  font-size: 3.5rem;
+}
+
+.hero h4 {
+  font-family: "Raleway", sans-serif;
+  color: #019F3F;
+  font-weight: bold;
+  font-size: 27px;
+}
+
+/* ------------------------------------
+                FOOTER 
+--------------------------------------- */
+footer {
+  background-color: #008F3A;
+  padding: 4rem 4rem 2rem 4rem;
+}
+
+footer .box {
+  background-color: #00A244;
+  border-top: 5px solid #D2D8D3;
+  padding: 1.7rem 3rem;
+}
+
+footer .social-nav a {
+  background-color: #fff;
+  color: #00A244 !important;
+  width: 33px;
+  height: 33px;
+  font-size: 0.9rem;
+  margin-right: 7px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  transition: all 0.3s ease;
+}
+
+footer .social-nav a:hover {
+  background-color: #019F3F;
+  color: #fff !important;
+}
+
+footer .items ul>li i {
+  color: #fff;
+  margin-right: 5px;
+  font-size: 0.8rem;
+}
+
+footer .items ul {
+  padding-left: 7px;
+}
+
+footer .items ul>li {
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+footer .items ul>li:hover {
+  color: #D2D8D3;
+}
+
+footer input {
+  position: relative;
+}
+
+footer .subscribe {
+  position: relative;
+}
+
+footer .subs-btn {
+  font-size: 1rem;
+  background-color: #00A244;
+  color: #fff;
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+footer .subs-btn:hover {
+  background-color: #019F3F;
+}
+
+footer .line {
+  width: 100%;
+  height: 1px;
+  background-color: #D2D8D3;
+  margin-top: 3rem;
+}
+
+footer .credits span {
+  color: #fff;
+}
+
+/* MEDIA-QUERY */
+@media only screen and (max-width: 500px) {
+  footer .subs-btn {
+      width: auto;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+  }
+}
+
+
+
+/* ------------------------------------
+                CONTACT 
+--------------------------------------- */
+#contact .box-info,
+#contact .box-shadow {
+    box-shadow: 0 0 30px rgb(214 215 216 / 60%);
+    padding: 20px 0 30px 0;
+}
+
+#contact .btn:hover {
+    background-color: #00A244;
+    color: #fff;
+}
+
+#contact .box-info i {
+    color: #00A244;
+    font-size: 29px;
+    border: 2px dotted #00A244;
+    padding: 0.7rem;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+#contact .title h3::after {
+    content: 'CONTACT';
+    font-size: 4rem;
+    font-weight: bolder;
+    position: absolute;
+    top: -70%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -1;
+    color: #F4F4F4;
+}
+
+
+/* ------------------------------------
+                Doctors 
+--------------------------------------- */
+#doctors .box {
+  box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+  padding: 3rem 2rem;
+  cursor: pointer;
+}
+
+#doctors .box img {
+  border-radius: 50%;
+  width: 70%;
+  padding-bottom: 20px;
+}
+
+#doctors .box h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.1rem;
+  font-weight: bolder;
+}
+
+#doctors .box p {
+  font-size: 1rem;
+}
+
+#doctors .box .social-nav a {
+  font-size: 1.3rem;
+  margin-left: 0;
+  transition: all 0.3s ease;
+  color: #00A244 !important;
+  background-color: #fff;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+#doctors .box .social-nav a:hover {
+  color: #fff !important;
+  background-color: #00A244;
+}
+
+#doctors .title h3::after {
+  content: 'TEAM';
+  font-size: 4rem;
+  font-weight: bolder;
+  position: absolute;
+  top: -70%;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: -1;
+  color: #F4F4F4;
+}
+
+
+
+/* ------------------------------------
+                Departments 
+--------------------------------------- */
+#departments .item {
+  box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+  padding: 80px 20px;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+#departments .icon {
+  font-size: 1.5rem;
+  background-color: #00A244;
+  padding: 1.2rem;
+  color: #fff;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+  transition: all 0.3s ease-out 0s;
+  position: relative;
+}
+
+#departments .icon::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -8px;
+  left: -8px;
+  background-color: #B7E6C9;
+  z-index: -1;
+}
+
+#departments .item:hover {
+  background-color: #00A244;
+  padding: 70px 20px 90px 20px;
+}
+
+#departments .item h4,
+#departments .item p {
+  transition: all 0.3s ease-out 0s;
+}
+
+#departments .item:hover h4,
+#departments .item:hover p {
+  color: #fff;
+}
+
+#departments .item:hover .icon {
+  color: #00A244;
+  background-color: #fff;
+}
+
+#departments .item:hover .icon::after {
+  background-color: rgba(255, 255, 255, 0.1);
+  z-index: 1;
+}
+
+#departments .title h3::after {
+  content: 'departments';
+  font-size: 4rem;
+  font-weight: bolder;
+  position: absolute;
+  top: -70%;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: -1;
+  color: #F4F4F4;
+}

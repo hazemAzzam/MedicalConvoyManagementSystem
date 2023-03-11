@@ -1,0 +1,42 @@
+
+{% block 'navbar' %}
+<div class="top-nav" id="home">
+    <div class="container p-2">
+        <div class="row d-flex justify-content-between">
+            <div class="col-auto d-flex">
+                <div class="item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>bedayacaravan@gmail.com</span>
+                </div>
+                <div class="item ms-3">
+                    <i class="fa-sharp fa-solid fa-mobile"></i>
+                    <span>+1 5589 55488 55</span>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="social-nav">
+                    <a href='/'><i class="fa-brands fa-twitter"></i></a>
+                    <a href='/'><i class="fa-brands fa-facebook"></i></a>
+                    <a href='/'><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<nav class="navbar  p-0 navbar-expand-lg navbar-light sticky-lg-top bg-white shadow" >
+    <div class="container">
+      <a class="navbar-brand fw-bolder fs-2" href='/'>Bedaya</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          {% for nav_link in nav_links %}
+          {% include 'links.html' with nav_link=nav_link title=title %}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+</nav>
+{% endblock %}

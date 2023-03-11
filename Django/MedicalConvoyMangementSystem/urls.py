@@ -16,11 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from api import urls as api
-from django.conf.urls.static import static
-from django.conf import settings
+from website import urls as website
+
+from api.views import test
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include(api))
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-print(f"{static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)}")
+    path('api/', include(api)),
+    path('', include(website))
+]

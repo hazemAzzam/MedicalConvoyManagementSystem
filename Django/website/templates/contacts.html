@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section id="contact" style="height: 100vh;">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <div class="box-info text-center">
+            <i class="fa-solid fa-location-dot"></i>
+            <h4 class="fw-bolder text-muted py-1">Our Address</h4>
+            <p>Hamada, Bani Mazar, El Minya.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="box-info text-center">
+            <i class="fa-regular fa-envelope"></i>
+            <h4 class="fw-bolder text-muted py-1">Email Us</h4>
+            <p>bedayacaravan@gmail.com</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="box-info text-center">
+            <i class="fa-solid fa-phone-volume"></i>
+            <h4 class="fw-bolder text-muted py-1">Call Us</h4>
+            <p>+1 5589 55488 55</p>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-lg-6">
+          <a href="https://goo.gl/maps/acfcPBaDV2vHwVZ38" target="_blank">
+            <div id="map-tiles">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14026.38559056165!2d30.79386072938502!3d28.491699019575105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145b06b569ca46eb%3A0xa344992a2c76e19e!2sBani%20Mazar%2C%20Madinet%20Bani%20Mazar%2C%20Beni%20Mazar%2C%20Menia%20Governorate%202534546!5e0!3m2!1sen!2seg!4v1678365740476!5m2!1sen!2seg" width="100%" height="330"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <span>map</span>
+            </div>
+        </a>
+        </div>
+        <div class="col-lg-6 box-shadow p-4">
+          <form method="POST" action="./send_message/">
+            {% csrf_token %}
+            
+            <div class="row gy-3">
+              <div class="col-lg-6 col-md-6">
+                <input name="name" type="text" class="form-control" placeholder="Your Name"/>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <input name="email" type="text" class="form-control" placeholder="Your Email"/>
+              </div>
+              <div class="col-lg-12">
+                <input name="subject" type="text" class="form-control" placeholder="Subject"/>
+              </div>
+              <div class="col-lg-12">
+                <textarea name="content" id="" cols="30" rows="5" class="form-control" placeholder="Message"></textarea>
+              </div>
+              <div class="text-center">
+                <input type="submit" value="Send Message" class="btn" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endblock %}

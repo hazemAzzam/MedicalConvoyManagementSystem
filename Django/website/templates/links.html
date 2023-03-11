@@ -1,0 +1,7 @@
+<li class="nav-item ">
+    {% if nav_link in title %}
+    <a class="nav-link aria-current"  href='/{{ nav_link | lower }}'>{{nav_link}}</a>
+    {% else %}
+    <a class="nav-link"  href='/{{ nav_link | lower }}'>{{nav_link}}</a>
+    {% endif %}
+</li>
